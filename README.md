@@ -2,7 +2,7 @@
 
 A fully responsive moving-services website built with **HTML**, **Bootstrap 5**, and **JavaScript**, showcasing front-end UI design, modals, carousels, form validation, and smooth scrolling.
 
-🔗 **Live Demo:** https://woleadeoshun10.github.io/
+🔗 **Live Demo:** [https://woleadeoshun10.github.io/Haulify-moving-website/](https://woleadeoshun10.github.io/Haulify-moving-website/)
 
 ---
 
