@@ -88,7 +88,7 @@ Designed to look perfect on:
 |------------------|----------------------------------|
 | **HTML5**        | Markup structure                 |
 | **CSS / Bootstrap 5** | Layout, styling, responsiveness |
-| **JavaScript (Vanilla)** | Interactive behavior        |
+| **JavaScript** | Interactive behavior        |
 | **Bootstrap JS API** | Modal + Carousel controls       |
 | **GitHub Pages** | Hosting the live version         |
 
