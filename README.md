@@ -82,7 +82,7 @@ Designed to look perfect on:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Technology       | Purpose                          |
 |------------------|----------------------------------|
