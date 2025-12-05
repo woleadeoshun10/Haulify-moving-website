@@ -123,7 +123,7 @@ All `.icon-link` elements open the “Get a Quote” modal.
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/woleadeoshun10/haulify.git
+   git clone https://github.com/woleadeoshun10/Haulify-moving-website.git
    
 2. Open index.html in your browser.
 3. Or deploy to GitHub Pages:
