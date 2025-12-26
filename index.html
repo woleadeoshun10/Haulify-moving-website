@@ -9,7 +9,9 @@
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <script src="script.js" defer></script>
 
-  <style>  
+  <style>
+    /* ===== FULLY RESPONSIVE DESIGN ===== */
+    
     /* Feature Icons */
     .feature-icon {
       width: 4rem;
@@ -95,29 +97,16 @@
       }
     }
 
-    /* Hero Image Container */
+    /* Hero Image Container - PHOTOS DISPLAY FULL SIZE */
     .hero-image-container {
-      max-height: 30vh;
       overflow: hidden;
       margin-bottom: 2rem;
-    }
-
-    @media (max-width: 768px) {
-      .hero-image-container {
-        max-height: 40vh;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .hero-image-container {
-        max-height: 50vh;
-      }
     }
 
     .hero-image-container img {
       width: 100%;
       height: auto;
-      object-fit: cover;
+      display: block;
     }
 
     /* Feature Cards */
@@ -139,7 +128,7 @@
       }
     }
 
-    /* Carousel */
+    /* Carousel - PHOTOS DISPLAY FULL SIZE */
     .carousel-container {
       margin: 3rem auto;
       max-width: 1200px;
@@ -153,27 +142,9 @@
     }
 
     .carousel-item img {
-      height: 400px;
-      object-fit: cover;
       width: 100%;
-    }
-
-    @media (max-width: 992px) {
-      .carousel-item img {
-        height: 350px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .carousel-item img {
-        height: 300px;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .carousel-item img {
-        height: 250px;
-      }
+      height: auto;
+      display: block;
     }
 
     /* Modals */
@@ -334,6 +305,7 @@
       </div>
     </div>
     
+    <!-- HERO IMAGE - DISPLAYS FULL SIZE -->
     <div class="hero-image-container">
       <div class="container px-3 px-sm-5">
         <img src="./moving-van.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Moving van" loading="lazy">
@@ -388,7 +360,7 @@
     </div>
   </div>
 
-  <!-- Carousel -->
+  <!-- Carousel - PHOTOS DISPLAY FULL SIZE -->
   <div class="container carousel-container">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
