@@ -479,60 +479,6 @@
     window.addDoc = addDoc;
     window.serverTimestamp = serverTimestamp;
 
-    // Modal Submit Handlers
-    document.getElementById('submitQuote').addEventListener('click', async () => {
-      const from = document.getElementById('from').value;
-      const to = document.getElementById('to').value;
-      const size = document.getElementById('size').value;
-
-      if (from && to && size) {
-        try {
-          await addDoc(collection(db, 'quotes'), {
-            from,
-            to,
-            size,
-            timestamp: serverTimestamp()
-          });
-          alert('Quote submitted successfully!');
-          bootstrap.Modal.getInstance(document.getElementById('quoteModal')).hide();
-          document.getElementById('from').value = '';
-          document.getElementById('to').value = '';
-          document.getElementById('size').value = '';
-        } catch (error) {
-          alert('Error submitting quote. Please try again.');
-          console.error(error);
-        }
-      } else {
-        alert('Please fill in all fields');
-      }
-    });
-
-    document.getElementById('submitContact').addEventListener('click', async () => {
-      const name = document.getElementById('contactName').value;
-      const email = document.getElementById('contactEmail').value;
-      const message = document.getElementById('contactMessage').value;
-
-      if (name && email && message) {
-        try {
-          await addDoc(collection(db, 'contacts'), {
-            name,
-            email,
-            message,
-            timestamp: serverTimestamp()
-          });
-          alert('Message sent successfully!');
-          bootstrap.Modal.getInstance(document.getElementById('contactModal')).hide();
-          document.getElementById('contactName').value = '';
-          document.getElementById('contactEmail').value = '';
-          document.getElementById('contactMessage').value = '';
-        } catch (error) {
-          alert('Error sending message. Please try again.');
-          console.error(error);
-        }
-      } else {
-        alert('Please fill in all fields');
-      }
-    });
   </script>
 
 </body>
